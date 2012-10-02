@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <benchmark.h>
 
 int main(int argc, char *argv[])

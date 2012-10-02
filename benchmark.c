@@ -1,6 +1,7 @@
 #include <benchmark.h>
 
 #if 0
+#include <xboot.h>
 #define DPRINT(x...)	printk(x)
 static double get_current_time(void)
 {
@@ -12,8 +13,8 @@ static double get_current_time(void)
 static double get_current_time(void)
 {
 	struct timeval time;
-	gettimeofday(&time, 0);
 
+	gettimeofday(&time, 0);
 	return ((double)time.tv_sec + (double)time.tv_usec / 1000000.0);
 }
 #endif
