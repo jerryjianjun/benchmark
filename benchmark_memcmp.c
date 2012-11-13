@@ -24,6 +24,8 @@ static void * memcmp_int(void)
 			free(d->dst);
 		if(!d->src)
 			free(d->src);
+		if(!d)
+			free(d);
 		return 0;
 	}
 

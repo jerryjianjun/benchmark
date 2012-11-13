@@ -17,7 +17,7 @@ static void * memset_int(void)
 	d->src = malloc(d->size);
 	if(!d->src)
 	{
-		free(d->src);
+		free(d);
 		return 0;
 	}
 
