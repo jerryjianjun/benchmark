@@ -26,6 +26,8 @@ extern struct benchmark_t benchmark_memcpy;
 extern struct benchmark_t benchmark_memset;
 extern struct benchmark_t benchmark_memmove;
 extern struct benchmark_t benchmark_memcmp;
+extern struct benchmark_t benchmark_fwrite;
+extern struct benchmark_t benchmark_fread;
 
 void benchmark(const char * name);
 

@@ -25,6 +25,8 @@ static struct benchmark_t * benchmarks[] =
 	&benchmark_memset,
 	&benchmark_memmove,
 	&benchmark_memcmp,
+	&benchmark_fwrite,
+	&benchmark_fread,
 	0,
 };
 
