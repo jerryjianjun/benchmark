@@ -2,10 +2,10 @@
 
 #if 0
 #include <xboot.h>
-#define DPRINT(x...)	printk(x)
+#define DPRINT(x...)	printf(x)
 static double get_current_time(void)
 {
-	return (double)jiffies / get_system_hz();
+	return (double)ktime_to_ns(ktime_get()) / 1000000000.0f;
 }
 #else
 #include <sys/time.h>

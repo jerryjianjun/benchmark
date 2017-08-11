@@ -6,8 +6,8 @@ int main(int argc, char *argv[])
 	benchmark("memset");
 	benchmark("memmove");
 	benchmark("memcmp");
-	benchmark("fwrite");
-	benchmark("fread");
+//	benchmark("fwrite");
+//	benchmark("fread");
 
 	return 0;
 }
